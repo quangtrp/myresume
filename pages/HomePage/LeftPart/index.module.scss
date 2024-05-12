@@ -1,0 +1,55 @@
+.leftPartContainer {
+  @apply w-full h-full lg:py-24 lg:w-1/2 lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:flex-col gap-[100px];
+}
+
+.introduction {
+  @apply flex flex-col gap-7;
+
+  .name {
+    @apply text-4xl font-bold tracking-tight text-primary sm:text-5xl m-0;
+  }
+
+  .position {
+    @apply text-lg font-medium tracking-tight text-primary sm:text-xl m-0;
+  }
+
+  .text {
+    @apply max-w-xs leading-normal text-secondary m-0;
+  }
+}
+
+.navigationTabs {
+  @apply hidden lg:flex flex-col gap-6;
+
+  .tabWrapper {
+    @apply flex items-center gap-4 cursor-pointer w-max;
+  }
+
+  .horizontalLine {
+    @apply h-[1px] w-[32px] bg-text-secondary;
+
+    &.activeLine {
+      @apply w-[64px] bg-text-primary;
+    }
+  }
+
+  .text {
+    @apply text-sm font-bold uppercase tracking-widest text-secondary group-hover:text-slate-200 group-focus-visible:text-slate-200;
+
+    &.active {
+      @apply text-primary;
+    }
+  }
+}
+
+.socialLinksContainer {
+  @apply flex gap-7 mt-8 lg:mt-0;
+
+  .icons {
+    @apply text-secondary;
+
+    &.activeLink {
+      @apply text-primary;
+    }
+  }
+}
