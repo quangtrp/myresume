@@ -1,0 +1,159 @@
+.rightPartContainer {
+  @apply pt-24 lg:w-1/2 lg:py-24 flex flex-col gap-10 lg:gap-32;
+}
+
+.aboutSection {
+  @apply text-secondary;
+}
+
+.aboutTitle {
+  @apply sticky top-0 z-20 -mx-6 mb-4 w-full bg-main/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0 uppercase text-primary font-medium;
+}
+
+.experienceSection {
+  @apply flex flex-col gap-14;
+}
+
+.experienceTitle {
+  @apply sticky top-0 z-20 -mx-6 mb-4 w-full bg-main/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0 uppercase text-primary font-medium;
+}
+
+.experienceWrapper {
+  @apply grid sm:grid-cols-8 md:grid-cols-8 relative cursor-pointer;
+
+  .time {
+    @apply sm:col-span-2 mt-[6px] mb-[6px] lg:mb-0 text-xs font-semibold uppercase text-secondary z-10;
+  }
+
+  .shadowWrapper {
+    @apply absolute -inset-x-4 -inset-y-4 z-0 rounded-md transition motion-reduce:transition-none;
+
+    &.hoverWrapper {
+      @apply -inset-x-6 block bg-slate-700/30 shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] drop-shadow-lg;
+    }
+  }
+}
+
+.contentWrapper {
+  @apply sm:col-span-6 flex flex-col gap-3 z-10;
+
+  .position {
+    @apply flex gap-2;
+  }
+
+  .positionText {
+    @apply font-medium leading-snug m-0 text-primary;
+
+    &.textActive {
+      @apply text-third;
+    }
+  }
+
+  .arrowIcon {
+    @apply text-primary flex justify-center items-center;
+
+    &.iconActive {
+      @apply text-third;
+    }
+  }
+
+  .description {
+    @apply text-secondary;
+  }
+
+  .technologiesWrapper {
+    @apply flex gap-2 flex-grow flex-wrap mt-1;
+
+    .techContainer {
+      @apply w-max bg-text-third/10 rounded-full text-third px-3 py-1 text-xs font-medium leading-5;
+    }
+  }
+}
+
+.resumeWrapper {
+  @apply flex gap-2 cursor-pointer w-max;
+
+  .resume {
+    @apply text-primary m-0 font-medium leading-snug;
+
+    &.resumeActive {
+      @apply text-third;
+    }
+  }
+
+  .icon {
+    @apply text-primary;
+
+    &.iconActive {
+      @apply text-third;
+    }
+  }
+}
+
+.projectsSection {
+  @apply flex flex-col gap-14;
+}
+
+.projectTitle {
+  @apply sticky top-0 z-20 -mx-6 mb-4 w-full bg-main/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0 uppercase text-primary font-medium;
+}
+
+.projectsWrapper {
+  @apply grid sm:grid-cols-8 md:grid-cols-8 relative cursor-pointer;
+
+  .imageWrapper {
+    @apply sm:col-span-2;
+
+    .image {
+      @apply lg:h-[54px] lg:w-[100px] sm:h-[100px] sm:w-[150px] rounded transition-all border-[2px] border-transparent border-solid;
+
+      &.imageHovered {
+        @apply border-third;
+      }
+    }
+  }
+
+  .shadowWrapper {
+    @apply absolute -inset-x-4 -inset-y-4 z-0 rounded-md transition motion-reduce:transition-none;
+
+    &.hoverWrapper {
+      @apply -inset-x-6 block bg-slate-700/30 shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] drop-shadow-lg;
+    }
+  }
+}
+
+.projectsContent {
+  @apply sm:col-span-6 flex flex-col gap-3 z-10;
+
+  .label {
+    @apply flex gap-2;
+  }
+
+  .labelText {
+    @apply font-medium leading-snug m-0 text-primary;
+
+    &.textActive {
+      @apply text-third;
+    }
+  }
+
+  .arrowIcon {
+    @apply text-primary flex justify-center items-center;
+
+    &.iconActive {
+      @apply text-third;
+    }
+  }
+
+  .description {
+    @apply text-secondary;
+  }
+
+  .technologiesWrapper {
+    @apply flex gap-2 flex-grow flex-wrap mt-1;
+
+    .techContainer {
+      @apply w-max bg-text-third/10 rounded-full text-third px-3 py-1 text-xs font-medium leading-5;
+    }
+  }
+}
